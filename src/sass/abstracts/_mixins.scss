@@ -3,3 +3,7 @@
 	line-height: 1.8;
 	color: $light-1;
 }
+
+@mixin boxShadow {
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
+}

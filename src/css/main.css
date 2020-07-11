@@ -1,3 +1,41 @@
+.section__heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .section__heading::after {
+    content: '';
+    height: 2px;
+    width: 3.5rem;
+    background-color: currentColor;
+    display: block;
+    margin-top: 1.5rem; }
+  .section__heading--center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .section__heading--right {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .section__heading--left {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+
+.section__text {
+  font-weight: 300;
+  line-height: 1.8;
+  color: #7d7987; }
+
 .button {
   text-decoration: none;
   color: #fff;
@@ -26,6 +64,38 @@
         border-color: transparent;
         color: #fff; }
 
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1.25rem;
+  padding: 3rem 2.5rem;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16); }
+  .service__icon {
+    display: block;
+    width: 90px;
+    height: 90px; }
+  .service__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.25rem 0 1rem 0; }
+  .service__text {
+    font-weight: 300;
+    line-height: 1.8;
+    color: #7d7987; }
+
 .header__title {
   font-size: 2.5rem;
   font-weight: 700; }
@@ -39,8 +109,18 @@
 .navbar .nav-item.active a {
   font-weight: bold; }
 
-.header {
+.header,
+.services,
+.more-info,
+.our-app {
   margin-bottom: 6.25rem; }
+
+.services p.section__text {
+  margin: 1.8rem 0 3.75rem 0; }
+
+.more-info p.section__text,
+.our-app p.section__text {
+  margin: 1.5rem 0 2.5rem 0; }
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)

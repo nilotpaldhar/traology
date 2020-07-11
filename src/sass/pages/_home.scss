@@ -1,3 +1,19 @@
-.header {
+.header,
+.services,
+.more-info,
+.our-app {
 	margin-bottom: 6.25rem;
+}
+
+.services {
+	p.section__text {
+		margin: 1.8rem 0 3.75rem 0;
+	}
+}
+
+.more-info,
+.our-app {
+	p.section__text {
+		margin: 1.5rem 0 2.5rem 0;
+	}
 }
