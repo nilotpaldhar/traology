@@ -1,0 +1,36 @@
+.button {
+	text-decoration: none;
+	color: $white;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+
+	&__primary {
+		font-size: 1.125rem;
+		font-weight: bold;
+		color: $white;
+		background-color: $primary;
+		padding: 1rem 2.5rem;
+		border: 1px solid transparent;
+		border-radius: 3rem;
+
+		&:hover {
+			background-color: darken($primary, 10);
+		}
+
+		&--outlined {
+			background-color: $white;
+			border-color: $primary;
+			color: $primary;
+
+			&:hover {
+				background-color: $primary;
+				border-color: transparent;
+				color: $white;
+			}
+		}
+	}
+}

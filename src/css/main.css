@@ -1,3 +1,47 @@
+.button {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .button:hover {
+    text-decoration: none;
+    color: #fff; }
+  .button__primary {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #458ff6;
+    padding: 1rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 3rem; }
+    .button__primary:hover {
+      background-color: #1472f4; }
+    .button__primary--outlined {
+      background-color: #fff;
+      border-color: #458ff6;
+      color: #458ff6; }
+      .button__primary--outlined:hover {
+        background-color: #458ff6;
+        border-color: transparent;
+        color: #fff; }
+
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 700; }
+
+.header__text {
+  margin: 1.5rem 0 2.5rem 0;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #7d7987; }
+
+.navbar .nav-item.active a {
+  font-weight: bold; }
+
+.header {
+  margin-bottom: 6.25rem; }
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
