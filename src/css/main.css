@@ -96,6 +96,17 @@
     line-height: 1.8;
     color: #7d7987; }
 
+.form-group label {
+  color: #7d7987; }
+
+.form-group .form-control {
+  border: 1px solid #dadada; }
+  .form-group .form-control:active, .form-group .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #458ff6; }
+
 .header__title {
   font-size: 2.5rem;
   font-weight: 700; }
@@ -109,10 +120,43 @@
 .navbar .nav-item.active a {
   font-weight: bold; }
 
+.footer {
+  background: -o-linear-gradient(269.02deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  background: linear-gradient(180.98deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  padding: 3.75rem 0;
+  color: #fff; }
+  .footer__logo {
+    display: block; }
+  .footer__text {
+    font-weight: 300;
+    line-height: 1.8;
+    color: #7d7987;
+    color: #fff;
+    margin-top: 1.25rem; }
+  .footer__menu-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.1rem; }
+  .footer__nav {
+    list-style: none;
+    padding: 0; }
+  .footer__nav-item:not(:last-child) {
+    margin-bottom: 0.5rem; }
+  .footer__nav-link, .footer__nav-link:link, .footer__nav-link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .footer__nav-link:hover, .footer__nav-link:link:hover, .footer__nav-link:visited:hover {
+      opacity: 0.6; }
+
 .header,
 .services,
 .more-info,
-.our-app {
+.our-app,
+.contact {
   margin-bottom: 6.25rem; }
 
 .services p.section__text {
@@ -121,6 +165,9 @@
 .more-info p.section__text,
 .our-app p.section__text {
   margin: 1.5rem 0 2.5rem 0; }
+
+.contact h2.section__heading {
+  margin-bottom: 3rem; }
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)

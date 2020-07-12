@@ -1,0 +1,45 @@
+.footer {
+	background: $bg-gradient;
+	padding: 3.75rem 0;
+	color: $white;
+
+	&__logo {
+		display: block;
+	}
+
+	&__text {
+		@include commonText;
+		color: $white;
+		margin-top: 1.25rem;
+	}
+
+	&__menu-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin-bottom: 1.1rem;
+	}
+
+	&__nav {
+		list-style: none;
+		padding: 0;
+	}
+
+	&__nav-item {
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	&__nav-link,
+	&__nav-link:link,
+	&__nav-link:visited {
+		text-decoration: none;
+		color: $white;
+		font-weight: 300;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}

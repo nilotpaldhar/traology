@@ -8,3 +8,10 @@ $white: #fff;
 
 // font
 $font-family-base: 'Muli', sans-serif;
+
+// background gradient
+$bg-gradient: linear-gradient(
+	180.98deg,
+	$primary-light -8.57%,
+	$primary-dark 82.96%
+);

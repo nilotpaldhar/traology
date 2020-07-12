@@ -1,0 +1,16 @@
+.form-group {
+	label {
+		color: $light-1;
+	}
+
+	.form-control {
+		border: 1px solid $light-2;
+
+		&:active,
+		&:focus {
+			outline: none;
+			box-shadow: none;
+			border-color: $primary;
+		}
+	}
+}

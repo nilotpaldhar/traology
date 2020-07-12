@@ -1,7 +1,8 @@
 .header,
 .services,
 .more-info,
-.our-app {
+.our-app,
+.contact {
 	margin-bottom: 6.25rem;
 }
 
@@ -15,5 +16,11 @@
 .our-app {
 	p.section__text {
 		margin: 1.5rem 0 2.5rem 0;
+	}
+}
+
+.contact {
+	h2.section__heading {
+		margin-bottom: 3rem;
 	}
 }
