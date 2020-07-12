@@ -1,0 +1,40 @@
+.testimonial {
+	&__user {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1.5rem;
+
+		&__photo {
+			display: block;
+			height: 6rem;
+			width: 6rem;
+			border-radius: 50%;
+			border: 3px solid $white;
+			box-sizing: content-box;
+		}
+
+		&__details {
+			margin-left: 1.5rem;
+			span {
+				display: block;
+			}
+		}
+
+		&__name {
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+
+		&__designation {
+			font-size: 1rem;
+			font-weight: 400;
+		}
+	}
+
+	&__text {
+		@include commonText;
+		color: $white;
+		text-align: center;
+	}
+}

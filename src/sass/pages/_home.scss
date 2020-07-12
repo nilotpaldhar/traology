@@ -3,7 +3,8 @@
 .more-info,
 .our-app,
 .contact,
-.blog {
+.blog,
+.testimonials {
 	margin-bottom: 6.25rem;
 }
 
@@ -21,8 +22,15 @@
 }
 
 .contact,
-.blog {
+.blog,
+.testimonials {
 	h2.section__heading {
 		margin-bottom: 3rem;
 	}
+}
+
+.testimonials {
+	padding: 3.75rem 0;
+	background: $bg-gradient;
+	color: $white;
 }
