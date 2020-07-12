@@ -2,8 +2,43 @@
 	font-weight: 300;
 	line-height: 1.8;
 	color: $light-1;
+
+	@include respond(x-large) {
+		font-size: 1.1rem;
+	}
 }
 
 @mixin boxShadow {
 	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+// Media query manager
+@mixin respond($breakpoint) {
+	@if $breakpoint == small {
+		@media only screen and (min-width: $sm) {
+			@content;
+		}
+	}
+	@if $breakpoint == medium {
+		@media only screen and (min-width: $md) {
+			@content;
+		}
+	}
+	@if $breakpoint == large {
+		@media only screen and (min-width: $lg) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == x-large {
+		@media only screen and (min-width: $xl) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == huge {
+		@media only screen and (min-width: $huge) {
+			@content;
+		}
+	}
 }

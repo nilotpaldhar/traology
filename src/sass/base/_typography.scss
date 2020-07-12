@@ -5,6 +5,10 @@
 	flex-direction: column;
 	justify-content: center;
 
+	@include respond(x-large) {
+		font-size: 2rem;
+	}
+
 	&::after {
 		content: '';
 		height: 2px;

@@ -1,3 +1,11 @@
-.navbar .nav-item.active a {
-	font-weight: bold;
+.navbar {
+	.nav-item {
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+
+		&.active a {
+			font-weight: bold;
+		}
+	}
 }

@@ -11,6 +11,9 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media only screen and (min-width: 1200px) {
+    .section__heading {
+      font-size: 2rem; } }
   .section__heading::after {
     content: '';
     height: 2px;
@@ -38,6 +41,9 @@
   font-weight: 300;
   line-height: 1.8;
   color: #7d7987; }
+  @media only screen and (min-width: 1200px) {
+    .section__text {
+      font-size: 1.1rem; } }
 
 .button {
   text-decoration: none;
@@ -68,6 +74,7 @@
         color: #fff; }
 
 .service {
+  min-height: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,6 +105,9 @@
     font-weight: 300;
     line-height: 1.8;
     color: #7d7987; }
+    @media only screen and (min-width: 1200px) {
+      .service__text {
+        font-size: 1.1rem; } }
 
 .form-group label {
   color: #7d7987; }
@@ -135,6 +145,9 @@
     line-height: 1.8;
     color: #7d7987;
     margin: 1rem 0; }
+    @media only screen and (min-width: 1200px) {
+      .article__text {
+        font-size: 1.1rem; } }
   .article__read-more, .article__read-more:link, .article__read-more:visited {
     text-decoration: none;
     font-weight: 400; }
@@ -178,16 +191,31 @@
   color: #7d7987;
   color: #fff;
   text-align: center; }
+  @media only screen and (min-width: 1200px) {
+    .testimonial__text {
+      font-size: 1.1rem; } }
+  @media only screen and (min-width: 768px) {
+    .testimonial__text {
+      text-align: left; } }
 
 .header__title {
   font-size: 2.5rem;
   font-weight: 700; }
+  @media only screen and (min-width: 992px) {
+    .header__title {
+      font-size: 3rem; } }
 
 .header__text {
   margin: 1.5rem 0 2.5rem 0;
   font-weight: 300;
   line-height: 1.8;
   color: #7d7987; }
+  @media only screen and (min-width: 1200px) {
+    .header__text {
+      font-size: 1.1rem; } }
+
+.navbar .nav-item:not(:last-child) {
+  margin-right: 1.5rem; }
 
 .navbar .nav-item.active a {
   font-weight: bold; }
@@ -205,6 +233,9 @@
     color: #7d7987;
     color: #fff;
     margin-top: 1.25rem; }
+    @media only screen and (min-width: 1200px) {
+      .footer__text {
+        font-size: 1.1rem; } }
   .footer__menu-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -232,6 +263,15 @@
 .blog,
 .testimonials {
   margin-bottom: 6.25rem; }
+  @media only screen and (min-width: 1200px) {
+    .header,
+    .services,
+    .more-info,
+    .our-app,
+    .contact,
+    .blog,
+    .testimonials {
+      margin-bottom: 12.5rem; } }
 
 .services p.section__text {
   margin: 1.8rem 0 3.75rem 0; }
@@ -249,7 +289,13 @@
   padding: 3.75rem 0;
   background: -o-linear-gradient(269.02deg, #67c3f3 -8.57%, #5a98f2 82.96%);
   background: linear-gradient(180.98deg, #67c3f3 -8.57%, #5a98f2 82.96%);
-  color: #fff; }
+  color: #fff;
+  max-width: 71.25rem;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 1200px) {
+    .testimonials {
+      border-radius: 1.5rem; } }
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)

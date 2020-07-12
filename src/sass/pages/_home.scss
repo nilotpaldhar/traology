@@ -6,6 +6,10 @@
 .blog,
 .testimonials {
 	margin-bottom: 6.25rem;
+
+	@include respond(x-large) {
+		margin-bottom: 12.5rem;
+	}
 }
 
 .services {
@@ -33,4 +37,11 @@
 	padding: 3.75rem 0;
 	background: $bg-gradient;
 	color: $white;
+	max-width: 71.25rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include respond(x-large) {
+		border-radius: 1.5rem;
+	}
 }

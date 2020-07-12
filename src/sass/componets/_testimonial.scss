@@ -36,5 +36,9 @@
 		@include commonText;
 		color: $white;
 		text-align: center;
+
+		@include respond(medium) {
+			text-align: left;
+		}
 	}
 }
