@@ -1,4 +1,13 @@
 $(document).ready(function () {
+	// Pre-loader
+	setTimeout(function () {
+		$('#preloader')
+			.children()
+			.fadeOut(500, function () {
+				$(this).parent().fadeOut(500);
+			});
+	}, 1000);
+
 	// Smooth scroll
 	SmoothScroll('a[href*="#"]', {
 		offset: 150,
