@@ -155,6 +155,9 @@
       display: inline-block;
       margin-left: 5px; }
 
+.testimonial:focus {
+  outline: none; }
+
 .testimonial__user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,6 +201,14 @@
     .testimonial__text {
       text-align: left; } }
 
+.slick-dots li button::before {
+  font-size: 10px;
+  color: white; }
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white; }
+
 .header__title {
   font-size: 2.5rem;
   font-weight: 700; }
@@ -217,7 +228,7 @@
 .navbar .nav-item:not(:last-child) {
   margin-right: 1.5rem; }
 
-.navbar .nav-item.active a {
+.navbar .nav-item a.nav-link.active {
   font-weight: bold; }
 
 .footer {
@@ -262,7 +273,7 @@
 .contact,
 .blog,
 .testimonials {
-  margin-bottom: 6.25rem; }
+  margin-bottom: 9rem; }
   @media only screen and (min-width: 1200px) {
     .header,
     .services,

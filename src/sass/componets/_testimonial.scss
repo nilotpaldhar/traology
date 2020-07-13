@@ -1,4 +1,8 @@
 .testimonial {
+	&:focus {
+		outline: none;
+	}
+
 	&__user {
 		display: flex;
 		justify-content: center;

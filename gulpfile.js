@@ -34,8 +34,12 @@ function modules() {
 	const jquery = src('./node_modules/jquery/dist/*').pipe(
 		dest('./src/vendor/jquery')
 	);
+	const smoothScroll = src('./node_modules/smooth-scroll/dist/*').pipe(
+		dest('./src/vendor/smooth-scroll')
+	);
 
-	return merge(bootstrap, jquery);
+	// node_modules\slick-carousel\slick
+	return merge(bootstrap, jquery, smoothScroll);
 }
 
 function optimiseAssests() {

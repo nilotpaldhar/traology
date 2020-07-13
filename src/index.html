@@ -19,13 +19,18 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#458ff6">
 
     <title>Traology | Virtual healthcare for you</title>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,700;1,500&display=swap"
       rel="stylesheet">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <!-- build:css css/main.min.css  -->
     <link rel="stylesheet" href="./css/main.css">
@@ -36,7 +41,7 @@
   <body>
 
     <!-- Navigation Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 mb-5">
+    <nav id="top-nvigation" class="navbar navbar-expand-lg navbar-light bg-white py-4 mb-5">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./images/logo.png" class="img-fluid" alt="logo">
@@ -47,7 +52,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
@@ -241,65 +246,73 @@
             What our customer are saying
           </h2>
 
-          <figure class="testimonial">
-            <div class="row justify-content-lg-center align-items-md-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <figcaption class="testimonial__user">
-                  <img src="./images/user-1.jpg" class="testimonial__user__photo" alt="user image">
-                  <div class="testimonial__user__details">
-                    <span class="testimonial__user__name">Gordie E</span>
-                    <span class="testimonial__user__designation">Geophysical Engineer</span>
-                  </div>
-                </figcaption>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <blockquote class="testimonial__text">
-                  &quot;I couldn't have asked for more than this. Not able to tell you how happy I am with Traology. I
-                  would
-                  gladly pay over 600
-                  dollars for Traology. It's just amazing.&quot;
-                </blockquote>
-              </div>
-            </div>
-          </figure>
+          <div id="testimonial-slider">
 
-          <figure class="testimonial mt-5">
-            <div class="row justify-content-lg-center align-items-md-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <figcaption class="testimonial__user">
-                  <img src="./images/user-2.jpg" class="testimonial__user__photo" alt="user image">
-                  <div class="testimonial__user__details">
-                    <span class="testimonial__user__name">Nalani H</span>
-                    <span class="testimonial__user__designation">Alumni Secretary</span>
-                  </div>
-                </figcaption>
+            <figure class="testimonial">
+              <div class="row justify-content-lg-center align-items-md-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figcaption class="testimonial__user">
+                    <img src="./images/user-1.jpg" class="testimonial__user__photo" alt="user image">
+                    <div class="testimonial__user__details">
+                      <span class="testimonial__user__name">Gordie E</span>
+                      <span class="testimonial__user__designation">Geophysical Engineer</span>
+                    </div>
+                  </figcaption>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <blockquote class="testimonial__text">
+                    &quot;Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque
+                    nibh. Aenean quam. In
+                    scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.&quot;
+                  </blockquote>
+                </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <blockquote class="testimonial__text">
-                  &quot;I will recommend you to my colleagues. I love your system.&quot;
-                </blockquote>
-              </div>
-            </div>
-          </figure>
+            </figure>
 
-          <figure class="testimonial mt-5">
-            <div class="row justify-content-lg-center align-items-md-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <figcaption class="testimonial__user">
-                  <img src="./images/user-3.jpg" class="testimonial__user__photo" alt="user image">
-                  <div class="testimonial__user__details">
-                    <span class="testimonial__user__name">Dusty I</span>
-                    <span class="testimonial__user__designation">Licensed Tax Consultant</span>
-                  </div>
-                </figcaption>
+            <figure class="testimonial">
+              <div class="row justify-content-lg-center align-items-md-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figcaption class="testimonial__user">
+                    <img src="./images/user-2.jpg" class="testimonial__user__photo" alt="user image">
+                    <div class="testimonial__user__details">
+                      <span class="testimonial__user__name">Nalani H</span>
+                      <span class="testimonial__user__designation">Alumni Secretary</span>
+                    </div>
+                  </figcaption>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <blockquote class="testimonial__text">
+                    &quot;Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos
+                    himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a
+                    cursus ipsum ante quis
+                    turpis.&quot;
+                  </blockquote>
+                </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <blockquote class="testimonial__text">
-                  &quot;It's just amazing. Traology has got everything I need.&quot;
-                </blockquote>
+            </figure>
+
+            <figure class="testimonial">
+              <div class="row justify-content-lg-center align-items-md-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figcaption class="testimonial__user">
+                    <img src="./images/user-3.jpg" class="testimonial__user__photo" alt="user image">
+                    <div class="testimonial__user__details">
+                      <span class="testimonial__user__name">Dusty I</span>
+                      <span class="testimonial__user__designation">Licensed Tax Consultant</span>
+                    </div>
+                  </figcaption>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <blockquote class="testimonial__text">
+                    &quot;Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor,
+                    sem massa mattis sem, at
+                    interdum magna augue eget diam.&quot;
+                  </blockquote>
+                </div>
               </div>
-            </div>
-          </figure>
+            </figure>
+          </div>
 
         </div>
       </section>
@@ -504,6 +517,9 @@
     <!-- build:js js/main.min.js  -->
     <script src="./vendor/jquery/jquery.js"></script>
     <script src="./vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./vendor/smooth-scroll/smooth-scroll.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
     <!-- endbuild -->
   </body>
 
