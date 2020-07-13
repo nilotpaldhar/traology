@@ -9,8 +9,7 @@ const gulp = require('gulp'),
 	terser = require('gulp-terser-js'),
 	csso = require('gulp-csso'),
 	babel = require('gulp-babel'),
-	merge = require('merge-stream'),
-	purgecss = require('gulp-purgecss');
+	merge = require('merge-stream');
 
 function compileSass() {
 	return (
@@ -55,7 +54,6 @@ function optimiseAssests() {
 		)
 		.pipe(gulpif('*.js', terser()))
 		.pipe(gulpif('*.css', csso()))
-		.pipe(gulpif('*.css', purgecss({ content: ['src/*.html'] })))
 		.pipe(dest('./dist'));
 }
 
